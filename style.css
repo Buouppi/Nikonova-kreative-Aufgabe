@@ -24,8 +24,10 @@ body {
 }
 
 .card-container {
-    width: 520px;
-    height: 808.89px;
+    max-width: 520px;
+    width: 100%;
+    max-height: 808.89px;
+    height: 100%;
     perspective: 1000px;
 }
 
@@ -59,4 +61,11 @@ body {
 
 .card-back {
     transform: rotateY(180deg);
+}
+
+@media (max-width: 600px) {
+    .card-container {
+        max-width: 370px;
+	    max-height: 577.89px;
+    }
 }
